@@ -1,4 +1,4 @@
-# Prelo, gens! 👋
+# Prelo, Gens! 👋
 
 This is the source of this cool website I made
 about making random stuff that works and maybe you can try!
