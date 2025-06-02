@@ -1,5 +1,3 @@
-<meta http-equiv="refresh" content="1;url=/index.html">
-
 # Prelo, gens! 👋
 
 This is the source of this cool website I made
