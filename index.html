@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #2e2e2e; /* Dark background */
+            background-color: #2e2e2e;
             color: white;
             font-family: 'Annie Use Your Telescope', cursive;
             display: flex;
@@ -15,8 +15,11 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            opacity: 0; /* Start hidden */
-            animation: fadeIn 3s forwards; /* 3s fade-in */
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
         }
 
         @keyframes fadeIn {
@@ -24,14 +27,22 @@
         }
 
         img {
-            width: 200px; /* Adjust size as needed */
+            width: 200px;
             height: auto;
             border-radius: 10px;
+            animation-delay: 0s;
         }
 
-        h1, p {
+        h1 {
             margin: 10px 0;
             text-align: center;
+            animation-delay: 1s;
+        }
+
+        p {
+            margin: 10px 0;
+            text-align: center;
+            animation-delay: 2s;
         }
 
         button {
@@ -45,6 +56,22 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            animation-delay: 3s; /* First button starts at 3s */
+        }
+
+        button:nth-of-type(2) {
+            animation-delay: 3.5s; /* Second button fades a bit later */
+        }
+
+        button:nth-of-type(3) {
+            animation-delay: 4s; /* Third button fades last */
+        }
+
+        /* Add fade-in class to elements */
+        img, h1, p, button {
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
         }
 
         button:hover {
@@ -53,11 +80,11 @@
     </style>
 </head>
 <body>
-    <img src="icons/me.png" alt="Site Icon">
-    <h1>hi welcome to my site</h1>
-    <p>uhhh idk enjoy :D</p>
-    <button>button here</button>
-    <button>button here</button>
-    <button>button here</button>
+    <img src="icons/me.png" alt="Site Icon" class="fade-in">
+    <h1 class="fade-in">hi welcome to my site</h1>
+    <p class="fade-in">uhhh idk enjoy :D</p>
+    <button class="fade-in">button here</button>
+    <button class="fade-in">button here</button>
+    <button class="fade-in">button here</button>
 </body>
 </html>
