@@ -4,87 +4,14 @@
     <meta charset="UTF-8">
     <title>My Fun Site</title>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #2e2e2e;
-            color: white;
-            font-family: 'Annie Use Your Telescope', cursive;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 2s forwards;
-        }
-
-        @keyframes fadeIn {
-            to { opacity: 1; }
-        }
-
-        img {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-            animation-delay: 0s;
-        }
-
-        h1 {
-            margin: 10px 0;
-            text-align: center;
-            animation-delay: 1s;
-        }
-
-        p {
-            margin: 10px 0;
-            text-align: center;
-            animation-delay: 2s;
-        }
-
-        button {
-            font-family: 'Annie Use Your Telescope', cursive;
-            font-size: 24px;
-            margin: 10px 0;
-            padding: 10px 20px;
-            background-color: #444;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            animation-delay: 3s; /* First button starts at 3s */
-        }
-
-        button:nth-of-type(2) {
-            animation-delay: 3.5s; /* Second button fades a bit later */
-        }
-
-        button:nth-of-type(3) {
-            animation-delay: 4s; /* Third button fades last */
-        }
-
-        /* Add fade-in class to elements */
-        img, h1, p, button {
-            animation-name: fadeIn;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-        }
-
-        button:hover {
-            background-color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="hi_im_style.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <img src="icons/me.png" alt="Site Icon" class="fade-in">
-    <h1 class="fade-in">hi welcome to my site</h1>
-    <p class="fade-in">uhhh idk enjoy :D</p>
-    <button class="fade-in">button here</button>
-    <button class="fade-in">button here</button>
-    <button class="fade-in">button here</button>
+    <img src="icons/me.png" alt="Site Icon" class="fade-slide-in">
+    <h1 class="fade-slide-in">hi welcome to my site</h1>
+    <p class="fade-slide-in">uhhh idk enjoy :D</p>
+    <button class="fade-slide-in">button here</button>
+    <button class="fade-slide-in">button here</button>
+    <button class="fade-slide-in">button here</button>
 </body>
 </html>

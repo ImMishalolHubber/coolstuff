@@ -1,0 +1,75 @@
+body {
+    background-color: #2e2e2e;
+    color: white;
+    font-family: 'Annie Use Your Telescope', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.fade-slide-in {
+    opacity: 0;
+    transform: translateY(30px); /* Start lower */
+    animation: fadeSlideIn 1s forwards;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    animation-delay: 0s;
+}
+
+h1 {
+    margin: 10px 0;
+    text-align: center;
+    animation-delay: 1s;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+    animation-delay: 2s;
+}
+
+button {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation-delay: 3s;
+}
+
+button:nth-of-type(2) {
+    animation-delay: 3.5s;
+}
+
+button:nth-of-type(3) {
+    animation-delay: 4s;
+}
+
+img, h1, p, button {
+    animation-name: fadeSlideIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+button:hover {
+    background-color: #666;
+}
